@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background: rgb(0,212,255);
+            background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(73,9,121,1) 95%);
+            background-size: cover;
+        }
+
+        #login_container{
+            width:320px;
+            padding: 10px 10px;
+            margin: 30px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 1px solid #999;
+        }
+        #login_container>h1{
+            text-align: center;
+            margin-top:80px;
+            margin-bottom:20px;
+        }
+        #loginForm{
+            width: 80%;
+            margin: auto;
+        }
+        input[type="submit"]{
+            width: 100%;
+            background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(73,9,121,1) 95%);
+            padding: 15px 10px;
+            border: none;
+            color: #FFF;
+            font-size: 14px;
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            border: none;
+
+          cursor: pointer;
+
+            font-size: 20px;
+            
+        }
+        input[type="email"],
+        input[type="password"]
+        {
+        width: 100%;
+        padding: 12px 5px;
+        border: none;
+        border-bottom: 2px solid #999;
+        resize: vertical;
+        margin-top: 20px;
+        font-size: 18px;
+
+        }
+        input:focus{
+            outline: none;
+        }
+        form+div{
+            width: 80%;
+            margin: 50px auto 50px auto;
+            text-align: center;
+        }
+        form+div>p{
+                line-height: 30px;
+                color: #999;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(2, 70, 173);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="login_container">
+        
+            <h1>Login</h1>
+            <form  id="loginForm">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="password" id="pwd" placeholder="Password">
+                <input type="submit" name="submit" id="submit" value="Login">
+            </form>
+        
+        <div>
+            <p>Forgot <a href="#">Password</a>?</p>
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+
+    </div>
+</body>
+</html>
