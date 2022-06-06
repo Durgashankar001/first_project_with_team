@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #signUp{
+            
+            width: 26%;
+            padding: 10px 10px 50px 10px;
+            margin: 80px 600px auto 350px;
+            background-color: #48c9b0;
+            
+            box-shadow: 1px solid #999;
+            /* border: 1px solid; */
+        }
+        #signUp>p{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom:50px;
+            color: white;
+            font-size: 33px;
+        }
+        #loginForm{
+            width: 80%;
+            margin: auto;
+        }
+        input[type="submit"]{
+            width: 100%;
+            background-color: #17a589;
+            padding: 20px 10px;
+            border: none;
+            color: #FFF;
+            font-size: 14px;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            border: none;
+
+          cursor: pointer;
+
+            font-size: 20px;
+            
+        }
+        input[type="email"], input[type="text"]{
+        width: 100%;
+        padding: 12px 5px;
+        border: none;
+        border-bottom: 2px solid #999;
+        resize: vertical;
+        margin-top: 20px;
+        font-size: 18px;
+        box-sizing: border-box;
+
+        } 
+        input:focus{
+            outline: none;
+        }   
+    </style>
+</head>
+
+<body>
+    <div id="signUp">
+        <p>-    Visitor    -</p>
+        <form id="loginForm" action="">
+            <input type="text" placeholder="Full name"><br>
+            <input type="email" placeholder="Email"><br>
+            <input type="text" placeholder="Organization"><br>
+            <input type="submit" name="submit1" id="submit1" value="SIGN UP"><br>
+            <input type="submit" name="submit2" id="submit2" value="RETURN">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
